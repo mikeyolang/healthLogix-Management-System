@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurse DApp - Nurse Login</title>
+    <link rel="stylesheet" href="/CSS/nurseLogin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nurse Login</h1>
+      <br />
+      <p>Enter your Nurse Number and select the Hospital:</p>
+    </header>
+
+    <main class="center-content">
+      <form id="nurseLoginForm">
+        <label for="nurseNumber">Nurse Number:</label>
+        <input
+          type="text"
+          id="nurseNumber"
+          name="nurseNumber"
+          placeholder="E.g NSH/123/2345/1D"
+          required
+        />
+
+        <label for="hospital">Hospital:</label>
+        <select id="hospital" name="hospital" required>
+          <option value="" disabled selected>Select Hospital</option>
+          <option value="hospital1">Kenyatta National Hospital</option>
+          <option value="hospital2">Agha Khan Hospital</option>
+          <option value="hospital2">Avenue Hospital</option>
+          <option value="hospital2">New Hospital</option>
+          <option value="hospital2">Another Hospital/option></option>
+          <option value="hospital2">Best Hospital</option>
+          <option value="hospital2">Health Logix Hospital</option>
+        </select>
+
+        <button type="submit">Log In</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Healthlogix</p>
+    </footer>
+
+    <script src="/JS/nurseLogin.js"></script>
+  </body>
+</html>

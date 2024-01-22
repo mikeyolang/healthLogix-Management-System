@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurse DApp - Home</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to MedCHain</h1>
+      <br />
+      <p>Empowering Healthcare Professionals</p>
+    </header>
+
+    <main class="center-content">
+      <section class="about-section">
+        <h2>How It Works</h2>
+        <p>
+          Log in as a Nurse, Doctor, or Administrator to access role-specific
+          features. Follow these simple steps:
+        </p>
+        <ol>
+          <li>Click on the "Log In as Nurse" button if you are a nurse.</li>
+          <li>Click on the "Log In as Doctor" button if you are a doctor.</li>
+          <li>
+            Click on the "Log In as Admin" button if you are an administrator.
+          </li>
+        </ol>
+      </section>
+
+      <section class="login-buttons">
+        <button onclick="login('nurse')">Log In as Nurse</button>
+        <button onclick="login('doctor')">Log In as Doctor</button>
+        <button onclick="login('admin')">Log In as Admin</button>
+      </section>
+    </main>
+
+    <footer>
+       <p>&copy; 2024 Healthlogix</p>
+    </footer>
+
+    <script src="/JS/index.js"></script>
+  </body>
+</html>

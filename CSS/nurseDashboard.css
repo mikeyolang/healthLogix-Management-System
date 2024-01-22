@@ -1,0 +1,139 @@
+/* Nurse Dashboard-specific styles */
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none; /* Remove underlining */
+  color: #fff; /* Set text color to white */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: black;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-container button {
+  padding: 8px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-container button:hover {
+  background-color: #c0392b;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-section {
+  max-width: 600px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+button {
+  padding: 12px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+.profile-image-container {
+  text-align: right; /* Align the image to the right */
+}
+
+.profile-image-container img {
+  max-width: 100px; /* Adjust the image width as needed */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px; /* Add some space between text and image */
+}
+
+/* Account Details CSS */
+.dashboard-link {
+  text-decoration: none;
+  color: inherit;
+  width: 550px;
+}
+
+.dashboard-section {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s;
+}
+
+.dashboard-section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+}

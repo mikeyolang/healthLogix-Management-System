@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthEase Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/admindashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>MedCHain</h1>
+        <p>Empowering Healthcare Professionals</p>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Forms Submitted</a></li>
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Patients</a></li>
+          <li><a href="#">Nurses</a></li>
+          <li><a href="#">Hospitals</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="cards">
+          <div class="card">
+            <h3>Forms Submitted</h3>
+            <p id="departments-count">456</p>
+          </div>
+          <div class="card">
+            <h3>Doctors</h3>
+            <p id="doctors-count">34</p>
+          </div>
+          <div class="card">
+            <h3>Nurses</h3>
+            <p id="patients-count">567</p>
+          </div>
+          <div class="card">
+            <h3>Patients Admitted</h3>
+            <p id="patients-count">567</p>
+          </div>
+        </section>
+        <section class="chart">
+          <!-- Placeholder for chart -->
+        </section>
+        <section class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Patient Case</th>
+                <th>Nurse to Attend to</th>
+                <th>Doctor In Charge</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Dummy Data -->
+              <tr>
+                <td>Salim Mohammed</td>
+                <td>Mercy Chep</td>
+                <td>Dr. Phillip</td>
+                <td>23 January, 2024</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="../JS/adminDashboard.js"></script>
+  </body>
+</html>

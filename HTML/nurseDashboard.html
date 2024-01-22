@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurse DApp - Nurse Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/CSS/nurseDashboard.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Logo or App Name -->
+      <h1>Nurse Dashboard</h1>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul>
+          <li><a href="/HTML/index.html">Home</a></li>
+          <li><a href="#">Patients</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Notifications</a></li>
+          <!-- Notifications link -->
+        </ul>
+      </nav>
+
+      <!-- Profile Picture and Logout Button -->
+      <div class="profile-container">
+        <img src="nurse_image.jpg" alt="Nurse Image" />
+        <button onclick="logout()">Log Out</button>
+      </div>
+    </header>
+
+    <main class="center-content">
+      <!-- Profile Section -->
+       <a href="accountDetails.html" class="dashboard-link">
+        <div class="dashboard-section">
+          <h2>Profile</h2>
+          <p>Name: [Nurse Name]</p>
+          <p>Name: [Nurse ID]</p>
+          <!-- Include details like email, contact, etc. -->
+        </div>
+      </a>
+
+      <!-- Account Section -->
+      <a href="accountDetails.html" class="dashboard-link">
+        <div class="dashboard-section">
+          <h2>Account</h2>
+          <!-- Include details like email, contact, etc. -->
+        </div>
+      </a>
+
+      <!-- Patients Assigned Section -->
+       <a href="../icp/patients.html" class="dashboard-link">
+        <div class="dashboard-section">
+          <h2>Patients Assigned -- 34</h2>
+          <!-- Include details like email, contact, etc. -->
+        </div>
+      </a>
+
+     
+     
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Health logix</p>
+    </footer>
+
+    <script src="/JS/nurseDashboard.js"></script>
+  </body>
+</html>

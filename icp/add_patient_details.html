@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Patient Details</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        width: 50%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Patient Details</h1>
+
+    <form>
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" readonly />
+
+      <label for="additionalDetails">Additional Details:</label>
+      <textarea id="additionalDetails" rows="4" required></textarea>
+
+      <button type="button" onclick="saveDetails()">Save Details</button>
+    </form>
+
+    <script>
+      // Fetch the patient name from the URL query parameter
+      var patientName = decodeURIComponent(
+        new URLSearchParams(window.location.search).get("patient")
+      );
+
+      // Set the patient name in the input field
+      document.getElementById("patientName").value = patientName;
+
+      function saveDetails() {
+        var patientName = document.getElementById("patientName").value;
+        var additionalDetails =
+          document.getElementById("additionalDetails").value;
+
+        // Save details to local storage for demonstration purposes
+        var patientDetails =
+          JSON.parse(localStorage.getItem("patientDetails")) || [];
+        patientDetails.push({ name: patientName, details: additionalDetails });
+        localStorage.setItem("patientDetails", JSON.stringify(patientDetails));
+
+        // Redirect back to the main page
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
